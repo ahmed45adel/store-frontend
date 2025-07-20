@@ -61,7 +61,7 @@ export const useUserStore = create((set, get) => ({
 
     set({ checkingAuth: true });
     try {
-      const response = await axios.post("/refreshToken");
+      const response = await axios.post("/auth/refresh-token");
       set({ checkingAuth: false });
       return response.data;
     } catch (error) {

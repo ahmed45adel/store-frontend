@@ -29,7 +29,7 @@ axiosInstance.interceptors.response.use(
 		if (
 			error.response?.status === 401 &&
 			!originalRequest._retry &&
-			!originalRequest.url.includes("/refreshToken")
+			!originalRequest.url.includes("/auth/refresh-token")
 		) {
 			if (isRefreshing) {
 				return new Promise(function (resolve, reject) {
@@ -48,7 +48,7 @@ axiosInstance.interceptors.response.use(
 
 			return new Promise((resolve, reject) => {
 				axiosInstance
-					.post("/refreshToken")
+					.post("/auth/refresh-token")
 					.then(() => {
 						processQueue(null);
 						resolve(axiosInstance(originalRequest));
