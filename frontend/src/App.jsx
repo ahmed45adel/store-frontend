@@ -15,8 +15,12 @@ import CartPage from "./pages/CartPage";
 import { useCartStore } from "./stores/useCartStore";
 import PurchaseSuccessPage from "./pages/PurchaseSuccessPage";
 import PurchaseCancelPage from "./pages/PurchaseCancelPage";
+import { useLocation } from 'react-router-dom';
 
 function App() {
+	const location = useLocation();
+  	console.log(location.pathname);
+	console.log("app here")
 	const { user, checkAuth, checkingAuth } = useUserStore();
 	const { getCartItems } = useCartStore();
 	useEffect(() => {
