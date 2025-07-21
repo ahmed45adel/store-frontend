@@ -1,6 +1,6 @@
 # E-commerce Store with Admin Dashboard
 
-A monorepo e-commerce store designed for a seamless shopping experience and powerful administration.
+E-commerce store designed for a seamless shopping experience with admin and customer roles.
 
 ## Features
 
@@ -20,5 +20,13 @@ A monorepo e-commerce store designed for a seamless shopping experience and powe
 *   **Media:** Cloudinary
 *   **Deployment:** vercel
 
-<a href="https://github.com/ahmed45adel/store-backend" target="_blank">Backend Code</a>  
-<a href="https://store-frontend-rose.vercel.app" target="_blank">Deployed Project</a>
+## Environment Variables
+
+This project requires the following environment variables. Make sure to replace each placeholder with your actual credentials and configurations.
+- `VITE_STRIPE_PUBLISHABLE_KEY`: The publishable key for Stripe.
+- `NODE_ENV`: The environment mode (`development`, `production`, etc.).
+- `VITE_API_BASE_URL`: The base URL for the API.
+
+
+<a href="https://github.com/ahmed45adel/store-backend" target="_blank">Backend Code Here</a>  
+<a href="https://store-frontend-rose.vercel.app" target="_blank">Deployed Project Here</a>
