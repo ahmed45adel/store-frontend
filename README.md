@@ -20,5 +20,5 @@ A monorepo e-commerce store designed for a seamless shopping experience and powe
 *   **Media:** Cloudinary
 *   **Deployment:** vercel
 
-[Backend Code](https://github.com/ahmed45adel/store-backend)
-[Deployed Project](https://store-frontend-rose.vercel.app)
+<a href="https://github.com/ahmed45adel/store-backend" target="_blank">Backend Code</a>  
+<a href="https://store-frontend-rose.vercel.app" target="_blank">Deployed Project</a>
