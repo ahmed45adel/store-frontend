@@ -27,6 +27,8 @@ This project requires the following environment variables. Make sure to replace 
 - `NODE_ENV`: The environment mode (`development`, `production`, etc.).
 - `VITE_API_BASE_URL`: The base URL for the API.
 
+## Using Stripe test cards
+*  You can refer to <a href="https://docs.stripe.com/testing?testing-method=card-numbers#visa" target="_blank">Stripe docs here</a> and use any card they offer
 
 <a href="https://github.com/ahmed45adel/store-backend" target="_blank">Backend Code Here</a>  
 <a href="https://store-frontend-rose.vercel.app" target="_blank">Deployed Project Here</a>
