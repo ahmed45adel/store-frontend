@@ -3,7 +3,7 @@ import { useProductStore } from "../stores/useProductStore";
 import { useParams } from "react-router-dom";
 import { motion } from "framer-motion";
 import ProductCard from "../components/ProductCard";
-import LoadingSpinner from "../components/LoadingSpinner";
+import ProductsSkeleton from "../components/ProductsSkeleton";
 
 const CategoryPage = () => {
   const { fetchProductsByCategory, categoryProducts, loading } = useProductStore();
@@ -28,9 +28,7 @@ const CategoryPage = () => {
         </motion.h1>
 
         {loading && products.length === 0 ? (
-          <div className="flex justify-center items-center col-span-full">
-            <LoadingSpinner />
-          </div>
+          <ProductsSkeleton />
         ) : (
           <motion.div
             className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 justify-items-center"
