@@ -5,13 +5,13 @@ import FeaturedProducts from "../components/FeaturedProducts";
 import LoadingSpinner from "../components/LoadingSpinner";
 
 const categories = [
-  { href: "/category/jeans", name: "Jeans", imageUrl: "/jeans.jpg" },
-  { href: "/category/t-shirts", name: "T-shirts", imageUrl: "/tshirts.jpg" },
-  { href: "/category/shoes", name: "Shoes", imageUrl: "/shoes.jpg" },
-  { href: "/category/glasses", name: "Glasses", imageUrl: "/glasses.png" },
-  { href: "/category/jackets", name: "Jackets", imageUrl: "/jackets.jpg" },
-  { href: "/category/suits", name: "Suits", imageUrl: "/suits.jpg" },
-  { href: "/category/bags", name: "Bags", imageUrl: "/bags.jpg" },
+  { slug: "jeans", name: "Jeans", imageUrl: "/jeans.jpg" },
+  { slug: "t-shirts", name: "T-shirts", imageUrl: "/tshirts.jpg" },
+  { slug: "shoes", name: "Shoes", imageUrl: "/shoes.jpg" },
+  { slug: "glasses", name: "Glasses", imageUrl: "/glasses.png" },
+  { slug: "jackets", name: "Jackets", imageUrl: "/jackets.jpg" },
+  { slug: "suits", name: "Suits", imageUrl: "/suits.jpg" },
+  { slug: "bags", name: "Bags", imageUrl: "/bags.jpg" },
 ];
 
 const HomePage = () => {
@@ -33,7 +33,7 @@ const HomePage = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {categories.map((category) => (
-            <CategoryItem category={category} key={category.name} />
+            <CategoryItem category={category} key={category.slug} />
           ))}
         </div>
 
